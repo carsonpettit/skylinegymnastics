@@ -17,39 +17,81 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Skyline Gymnastics</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- Secondary Black Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark py-1" style="background-color: #000000 !important;">
+  <div class="container-fluid">
+    <!-- Left-side links -->
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="https://app.jackrabbitclass.com/regv2.asp?id=552347" target="_blank">Register Now</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgID=552347" target="_blank">Parent Portal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://app.jackrabbitclass.com/jr3.0/Openings/OpeningsDirect?OrgID=552347&Session=2025%20Fall%20II&Hidecols=Ages,Gender,Openings&Sort=Session,Days,Times" target="_blank">
+          Current Classes – Fall II
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://app.jackrabbitclass.com/jr3.0/Openings/OpeningsDirect?OrgID=552347&Session=2026%20Winter&Hidecols=Ages,Gender,Openings&Sort=Session,Days,Times" target="_blank">
+          Upcoming Classes – Winter
+        </a>
+      </li>
+    </ul>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-            <li class="nav-item"><a class="nav-link" href="coaching.html">Coaching</a></li>
-            <li class="nav-item"><a class="nav-link" href="information.html">Information</a></li>
-            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
-            <li class="nav-item"><a class="nav-link" href="parties.html">Parties</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!-- Right-side phone numbers -->
+    <span class="navbar-text text-white">
+      540-271-1241 | 540-421-0371
+    </span>
+  </div>
+</nav>
 
-    <div class="container mt-5">
-      <h1>Welcome to Skyline Gymnastics!</h1>
-      <p>Ready to flip, tumble, and roll?<br>
-Skyline Gymnastics holds classes for boys and girls ages 18 months to 18 years in the Shenandoah Valley.
-Register your gymnast today!</p>
+<!-- Main Navbar (White) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white navbar-main">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="skyline5.avif" alt="Skyline Gymnastics Logo" class="logo-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="coaching.html">Coaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="information.html">Information</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+        <li class="nav-item"><a class="nav-link" href="parties.html">Parties</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+ <!-- Banner with Text Overlay -->
+<div class="banner position-relative">
+  <img src="skyline1.png" alt="Skyline Gymnastics Gym" class="img-fluid w-100">
 
-<!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+  <!-- Text Box Overlay -->
+  <div class="banner-text text-center">
+    <h1><strong>Welcome to Skyline Gymnastics!</strong></h1>
+    <p>
+      Ready to flip, tumble, and roll?<br>
+      Classes for boys and girls ages 18 months to 18 years in the Shenandoah Valley. <br>
+      <h2>Register your gymnast today!</h2>
+  </div>
+</div>
+ 
+ <!-- Footer -->
+  <footer class="text-white text-center py-3" style="background-color: #500A71;">
+    <p class="mb-0">© 2025 Skyline Gymnastics • All Rights Reserved</p>
+  </footer>
+  <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+
+  </body>
+</html>

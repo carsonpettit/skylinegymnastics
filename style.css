@@ -1,1 +1,70 @@
-/* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
+:root {
+  --primary-purple: #500A71;
+  --primary-purple-hover: #3d0757;
+}
+
+/* Navbar links for white main navbar */
+.navbar-light .navbar-nav .nav-link {
+  color: #500A71 !important;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--primary-purple-hover) !important;
+}
+
+.navbar-light .navbar-brand img.logo-img {
+  height: 55px;
+  width: auto;
+}
+
+/* Buttons */
+.btn-primary, .btn-success, .btn-info, .btn-warning {
+  background-color: var(--primary-purple);
+  border-color: var(--primary-purple);
+  color: white;
+}
+
+.btn-primary:hover, .btn-success:hover, .btn-info:hover, .btn-warning:hover {
+  background-color: var(--primary-purple-hover);
+  border-color: var(--primary-purple-hover);
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-purple);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--primary-purple-hover);
+  text-decoration: underline;
+}
+
+/* Make main navbar taller */
+.navbar-main {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.navbar-main .navbar-brand img.logo-img {
+  height: 110px; /* increase as needed */
+  width: auto;
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+
+
