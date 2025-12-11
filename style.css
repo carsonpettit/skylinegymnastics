@@ -1,3 +1,7 @@
+body {
+  background-color: #f8f0ff;
+}
+
 :root {
   --primary-purple: #500A71;
   --primary-purple-hover: #3d0757;
@@ -5,7 +9,7 @@
 
 /* Navbar links for white main navbar */
 .navbar-light .navbar-nav .nav-link {
-  color: #500A71 !important;
+  color: var(--primary-purple) !important;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -50,15 +54,16 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Make main navbar taller */
 .navbar-main {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
 }
 
 .navbar-main .navbar-brand img.logo-img {
-  height: 110px; /* increase as needed */
+  height: 100px; 
   width: auto;
+  max-height: 80px;
+}
 
 body {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -66,5 +71,171 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica", "Arial", sans-serif;
+}
 
+/* Full-width party banner with overlay */
+.party-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('skyline3.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden; 
+}
+
+/* Semi-transparent overlay */
+.party-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(106, 13, 173, 0.6); 
+  z-index: 1;
+}
+
+/* Party banner text styling */
+.party-banner h1,
+.party-banner h2,
+.party-banner h3 {
+  position: relative;
+  z-index: 2; 
+  margin: 0.5rem 0;
+}
+
+.party-banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.party-banner h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.party-banner h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.party-content {
+  margin-top: 40px;
+}
+
+/* Banner with image & text overlay */
+.banner {
+  position: relative;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px 40px;
+  border-radius: 10px;
+  z-index: 2;
+  max-width: 90%;
+}
+
+/* Banner heading & paragraph spacing */
+.banner-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Registration button inside banner */
+.banner-text a.btn-register {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background-color: black;      
+  border: 2px solid black;      
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.banner-text a.btn-register:hover {
+  background-color: #333333;    
+  border-color: #333333;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .banner-text {
+    padding: 15px 25px;
+  }
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+  .banner-text p {
+    font-size: 1rem;
+  }
+  .banner-text a.btn-register {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Accordion styling - purple */
+.accordion-button {
+  background-color: var(--primary-purple);  /* header background */
+  color: white;                             /* header text color */
+  font-weight: 500;
+}
+
+.accordion-button:hover {
+  background-color: var(--primary-purple-hover);
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(80, 10, 113, 0.5);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-purple-hover); 
+  color: white;
+}
+
+.accordion-body {
+  background-color: #f8f0ff; 
+  color: #000;  
+  }             
+
+.accordion-item {
+  border: 1px solid var(--primary-purple); 
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Accordion down arrows */
+.accordion-button::after {
+  filter: invert(100%); 
+}
 
